@@ -1,5 +1,5 @@
 select *
-    from (
-        select * from HOUSEKEEPING.ACTIVES_TABLE.TABLE_INFORMATION
-    ) as model_limit_subq
-    limit 100
+from (select * from housekeeping.actives_table.table_information) as model_limit_subq
+limit 100
+
+create table 
