@@ -1,4 +1,1 @@
-select *
-from (select * from housekeeping.actives_table.table_information) as model_limit_subq
-limit 100
-create ta data_in_github
+select * from {{ ref('query') }}
